@@ -154,3 +154,36 @@
   154  git push -u origin main
   155  history
   156  history > ./Day2Commands.txt
+  157  git commit 
+  158  cd ..
+  159  git commit 
+  160  git push
+  161  git push -u origin main
+  162  git rm --cached terraform-provider-aws_v6.27.0_x5
+  163  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  164  git commit -m "Exclude large file from repo"
+  165  git push origin --force --all
+  166  git commit 
+  167  git add .
+  168  git commit -a
+  169  git push origin -u origin main
+  170  git push
+  171  cd ./Day02/
+  172  history > ./Day2Commands.txt
+  173  cls
+  174  clear
+  175  cd ..
+  176  git fetch origin
+  177  git remote -v
+  178  git fetch origin
+  179  git merger origin/main
+  180  git merge origin/main
+  181  git commit
+  182  git commit -a
+  183  git push origin
+  184  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  185  git commit -m "Remove large Terraform provider binary from repo"
+  186  git push origin main
+  187  git rm --cached
+  188  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  189  history > ./Day02/Day2Commands.txt 
