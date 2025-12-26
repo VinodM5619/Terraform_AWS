@@ -2,6 +2,8 @@
 *.tfstate
 *.tfstate.*
 *.tfvars
+*.terraform/*
+*.terraform/
 .terraform/
 .terraform.lock.hcl
 crash.log
