@@ -187,3 +187,24 @@
   187  git rm --cached
   188  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
   189  history > ./Day02/Day2Commands.txt 
+  190  history
+  191  aws s3 ls
+  192  git add .
+  193  git commit -a
+  194  git push -u origin main
+  195  git commit -a
+  196  git push -u origin main
+  197  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  198  git rm --cached terraform-provider-aws_v6.27.0_x5
+  199  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  200  git rm --cached git filter-repo
+  201  git filter-repo
+  202  git filter-branch
+  203  git push -u origin main
+  204  git merge origin
+  205  git merge main
+  206  git push -u origin main
+  207  git pull origin
+  208  git pull origin/main
+  209  git pull https://github.com/VinodM5619/Terraform_AWS/tree/main
+  210  history > ./Day02/Day2Commands.txt 
