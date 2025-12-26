@@ -1,0 +1,121 @@
+    1  hostname
+    2  uname -a
+    3  wsl --list
+    4  exit
+    5  terraform -version
+    6  pwd
+    7  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+    8  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+    9  sudo apt update && sudo apt install terraform
+   10  terraform -version
+   11  terraform -install-autocomplete
+   12  alias tf=terraform
+   13  terraform -version
+   14  tf -versio
+   15  tf -version
+   16  terraform -version
+   17  history
+   18  uname -a
+   19  hostnamectl
+   20  pwd
+   21  cd ..
+   22  pwd
+   23  mkdir AWS_Terraform
+   24  ls -ltr
+   25  cd ./Terraform-Full-Course-Aws/
+   26  ls -ltr
+   27  cd ./lessons/day01/
+   28  ls -ltr
+   29  cat ./README.md
+   30  cd ../..
+   31  cd ..
+   32  cd ./AWS_Terraform/
+   33  terrafor -install-autocomplete
+   34  tf -install-autocomplete
+   35  ls -ltr
+   36  mkdir Day02
+   37  aws configure
+   38  sudo snap install aws-cli
+   39  sudo apt install awscli
+   40  clear
+   41  aws configure
+   42  aws s3 ls
+   43  pwd
+   44  cd /home/vinod/.aws/
+   45  ls
+   46  cat ./credentials
+   47  ls
+   48  pwd
+   49  tf apply
+   50  cd /home/vinod/
+   51  ls
+   52  cd ./AWS_Terraform/Day02/
+   53  tf apply
+   54  terraform apply
+   55  tf -version
+   56  terraform -version
+   57  alias terraform=tf
+   58  tf -version
+   59  alias terraform=tf
+   60  tf -version
+   61  terraform -version
+   62  terraform
+   63  tf applly
+   64  tf apply
+   65  terraform apply
+   66  terraform -version
+   67  # For Ubuntu/Debian
+   68  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   69  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   70  sudo apt update && sudo apt install terraform
+   71  terraform -version
+   72  terraform -install-autocomplete
+   73  sudo apt update
+   74  sudo apt install wget gnupg software-properties-common -y
+   75  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   76  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   77  sudo apt update
+   78  sudo apt install terraform -y
+   79  terraform -version
+   80  # Update package list
+   81  sudo apt update
+   82  # Install prerequisites
+   83  sudo apt install wget gnupg software-properties-common -y
+   84  # Add HashiCorp’s official GPG key
+   85  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor |   sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   86  # Add the HashiCorp repo
+   87  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+   88  https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   89  # Update again and install Terraform
+   90  sudo apt update
+   91  sudo apt install terraform -y
+   92  terraform -version
+   93  ls -ltr
+   94  terraform -version
+   95  terraform apply
+   96  terraform init
+   97  cd ./Day02/
+   98  terraform init
+   99  terraform deploy
+  100  terraform plan
+  101  terraform apply
+  102  aws s3 ls
+  103  terraform -version
+  104  aws s3 ls
+  105  terraform -version
+  106  cls
+  107  clear
+  108  terraform -version
+  109  alias tf=terraform
+  110  tf -version
+  111  clear
+  112  tf init
+  113  tf plan
+  114  tf init
+  115  tf plan
+  116  tf apply
+  117  tf plan
+  118  tf destroy
+  119  tf plan
+  120  history
+  121  history > Day2Commands.txt
