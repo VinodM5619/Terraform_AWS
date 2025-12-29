@@ -432,3 +432,18 @@
   432  tf plan
   433  tf plan | grep created
   434  history > Day10Commands.txt
+  435  cd ..
+  436  git checkout 
+  437  git commit 
+  438  git add .
+  439  git add
+  440  git add .
+  441  git commit 
+  442  git push .
+  443  git merge
+  444  git config morusu.vinod@gmail.com 'Vinod'
+  445  git push .
+  446  git commit .
+  447  git push origin/main 
+  448  git push Terraform_AWS
+  449  history > ./Day10\ -\ Expressions/Day10Commands.txt 
