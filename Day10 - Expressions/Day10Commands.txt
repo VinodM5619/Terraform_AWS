@@ -453,3 +453,26 @@
   453  git commit 
   454  git push
   455  history > ./Day10\ -\ Expressions/Day10Commands.txt 
+  456  git show
+  457  git add .
+  458  git commit .
+  459  git push origin main
+  460  git -rm cached
+  461  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  462  git rm --cached linux_amd64/terraform-provider-aws_v6.27.0_x5
+  463  git filter-repo --path Day02/.terraform --invert-paths
+  464  pip install git-filter-repo
+  465  yum install git-filter-repo
+  466  yum4 install git-filter-repo
+  467  sudo apt install git-filter-repo
+  468  git filter-repo --path Day02/.terraform --invert-paths
+  469  git filter-repo --path Day02/.terraform --invert-paths --firce
+  470  git filter-repo --path Day02/.terraform --invert-paths --force
+  471  git push origin main --force
+  472  git push --force
+  473  git push origin/main --force
+  474  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  475  git add .
+  476  git commit 
+  477  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  478  history > ./Day10\ -\ Expressions/Day10Commands.txt 
