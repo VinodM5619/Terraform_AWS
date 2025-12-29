@@ -1,0 +1,4 @@
+Terraform Expressions:
+1. Condition Expression (True or False)
+2. Dynamix blocks
+3. Splat Expressions

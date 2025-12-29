@@ -1,0 +1,5 @@
+ignore_changes  - done 
+create_before_destroy - done 
+prevent_destroy - done 
+replace_triggered_by - done 
+pre and post condition  - done 
