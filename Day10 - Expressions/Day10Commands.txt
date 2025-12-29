@@ -447,3 +447,9 @@
   447  git push origin/main 
   448  git push Terraform_AWS
   449  history > ./Day10\ -\ Expressions/Day10Commands.txt 
+  450  git show
+  451  git commit 
+  452  git add .
+  453  git commit 
+  454  git push
+  455  history > ./Day10\ -\ Expressions/Day10Commands.txt 
