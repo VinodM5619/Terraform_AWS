@@ -1,0 +1,9 @@
+Function types:
+Validation
+Lookup
+File
+Date and Time
+String 
+Numeric
+Collection 
+Type 
