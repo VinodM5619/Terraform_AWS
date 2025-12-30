@@ -153,3 +153,4 @@ variable "default_locations" {
   description = "Default AWS regions"
   default     = ["us-west-1"]
 }
+
