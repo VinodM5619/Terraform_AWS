@@ -1,0 +1,616 @@
+    1  hostname
+    2  uname -a
+    3  wsl --list
+    4  exit
+    5  terraform -version
+    6  pwd
+    7  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+    8  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+    9  sudo apt update && sudo apt install terraform
+   10  terraform -version
+   11  terraform -install-autocomplete
+   12  alias tf=terraform
+   13  terraform -version
+   14  tf -versio
+   15  tf -version
+   16  terraform -version
+   17  history
+   18  uname -a
+   19  hostnamectl
+   20  pwd
+   21  cd ..
+   22  pwd
+   23  mkdir AWS_Terraform
+   24  ls -ltr
+   25  cd ./Terraform-Full-Course-Aws/
+   26  ls -ltr
+   27  cd ./lessons/day01/
+   28  ls -ltr
+   29  cat ./README.md
+   30  cd ../..
+   31  cd ..
+   32  cd ./AWS_Terraform/
+   33  terrafor -install-autocomplete
+   34  tf -install-autocomplete
+   35  ls -ltr
+   36  mkdir Day02
+   37  aws configure
+   38  sudo snap install aws-cli
+   39  sudo apt install awscli
+   40  clear
+   41  aws configure
+   42  aws s3 ls
+   43  pwd
+   44  cd /home/vinod/.aws/
+   45  ls
+   46  cat ./credentials
+   47  ls
+   48  pwd
+   49  tf apply
+   50  cd /home/vinod/
+   51  ls
+   52  cd ./AWS_Terraform/Day02/
+   53  tf apply
+   54  terraform apply
+   55  tf -version
+   56  terraform -version
+   57  alias terraform=tf
+   58  tf -version
+   59  alias terraform=tf
+   60  tf -version
+   61  terraform -version
+   62  terraform
+   63  tf applly
+   64  tf apply
+   65  terraform apply
+   66  terraform -version
+   67  # For Ubuntu/Debian
+   68  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   69  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   70  sudo apt update && sudo apt install terraform
+   71  terraform -version
+   72  terraform -install-autocomplete
+   73  sudo apt update
+   74  sudo apt install wget gnupg software-properties-common -y
+   75  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   76  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   77  sudo apt update
+   78  sudo apt install terraform -y
+   79  terraform -version
+   80  # Update package list
+   81  sudo apt update
+   82  # Install prerequisites
+   83  sudo apt install wget gnupg software-properties-common -y
+   84  # Add HashiCorp’s official GPG key
+   85  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor |   sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   86  # Add the HashiCorp repo
+   87  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+   88  https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   89  # Update again and install Terraform
+   90  sudo apt update
+   91  sudo apt install terraform -y
+   92  terraform -version
+   93  ls -ltr
+   94  terraform -version
+   95  terraform apply
+   96  terraform init
+   97  cd ./Day02/
+   98  terraform init
+   99  terraform deploy
+  100  terraform plan
+  101  terraform apply
+  102  aws s3 ls
+  103  terraform -version
+  104  aws s3 ls
+  105  terraform -version
+  106  cls
+  107  clear
+  108  terraform -version
+  109  alias tf=terraform
+  110  tf -version
+  111  clear
+  112  tf init
+  113  tf plan
+  114  tf init
+  115  tf plan
+  116  tf apply
+  117  tf plan
+  118  tf destroy
+  119  tf plan
+  120  history
+  121  history > Day2Commands.txt
+  122  ls
+  123  cat ./Day2Commands.txt
+  124  cd ..
+  125  pwd
+  126  git init
+  127  echo "# Terraform_AWS" >> README.md
+  128  git init
+  129  git add README.md
+  130  git commit -m "first commit"
+  131  git config --global user.email "morusu.vinod@gmail.com"
+  132  git commit -m "first commit"
+  133  git config "morusu.vinod@gmail.com"
+  134  git commit -m "first commit"
+  135  git config --global user.name "Vinod Morusu"
+  136  git config --global user.email "morusu.vinod@gmail.com"
+  137  git commit -m "first commit"
+  138  git add .
+  139  git branch -M main
+  140  git remote add origin https://github.com/VinodM5619/Terraform_AWS.git
+  141  git push -u origin main
+  142  ssh-keygen -t ed25519 -C "morusu.vinod@gmail.com"
+  143  cat ~/.ssh/id_ed25519.pub
+  144  cat ./keypairforgit.pub
+  145  cat ./keypairforgit
+  146  git push -u origin main
+  147  git remote set-url origin https://github.com/VinodM5619/Terraform_AWS.git
+  148  git push -u origin main
+  149  git config --global credential.helper store
+  150  git push -u origin main
+  151  cd ./Day02/
+  152  git add
+  153  git add .
+  154  git push -u origin main
+  155  history
+  156  history > ./Day2Commands.txt
+  157  git commit 
+  158  cd ..
+  159  git commit 
+  160  git push
+  161  git push -u origin main
+  162  git rm --cached terraform-provider-aws_v6.27.0_x5
+  163  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  164  git commit -m "Exclude large file from repo"
+  165  git push origin --force --all
+  166  git commit 
+  167  git add .
+  168  git commit -a
+  169  git push origin -u origin main
+  170  git push
+  171  cd ./Day02/
+  172  history > ./Day2Commands.txt
+  173  cls
+  174  clear
+  175  cd ..
+  176  git fetch origin
+  177  git remote -v
+  178  git fetch origin
+  179  git merger origin/main
+  180  git merge origin/main
+  181  git commit
+  182  git commit -a
+  183  git push origin
+  184  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  185  git commit -m "Remove large Terraform provider binary from repo"
+  186  git push origin main
+  187  git rm --cached
+  188  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  189  history > ./Day02/Day2Commands.txt 
+  190  history
+  191  aws s3 ls
+  192  git add .
+  193  git commit -a
+  194  git push -u origin main
+  195  git commit -a
+  196  git push -u origin main
+  197  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  198  git rm --cached terraform-provider-aws_v6.27.0_x5
+  199  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  200  git rm --cached git filter-repo
+  201  git filter-repo
+  202  git filter-branch
+  203  git push -u origin main
+  204  git merge origin
+  205  git merge main
+  206  git push -u origin main
+  207  git pull origin
+  208  git pull origin/main
+  209  git pull https://github.com/VinodM5619/Terraform_AWS/tree/main
+  210  history > ./Day02/Day2Commands.txt 
+  211  cat ./Day02/Day2Commands.txt 
+  212  clear
+  213  git push origin/main
+  214  git commit -a
+  215  git push origin/main
+  216  git push -u origin/main
+  217  git push 
+  218  git pull 
+  219  clear
+  220  terraform validate
+  221  terraform init
+  222  cd ./Day02/
+  223  tf init
+  224  tf plan
+  225  tf -version
+  226  terraform -version
+  227  alias tf=terraform
+  228  tf -version
+  229  clear
+  230  cd ./Day02/
+  231  tf init
+  232  tf plan
+  233  ls -ltr
+  234  d ./Day05/
+  235  ls -ltr
+  236  cd ./Day05/
+  237  ls -ltr
+  238  uname -a
+  239  lsb_release -a
+  240  hostnamectl
+  241  cd ..
+  242  cd Day06
+  243  mkdir Day06
+  244  cd ./Day06/
+  245  ls -ltr
+  246  clear
+  247  cls 
+  248  clear
+  249  tf -version
+  250  terraform -version
+  251  alias tf=terraform
+  252  ls -ltr
+  253  cd ./Day02/
+  254  ls -ltr
+  255  terraform output
+  256  tf init
+  257  tf output
+  258  terraform console
+  259  cd ..
+  260  mkdri Day03
+  261  mkdir Day03
+  262  cp ./Day02/main.tf ./Day03/
+  263  aws s3 ls
+  264  cd ./Day03/
+  265  clear
+  266  ls -ltr
+  267  tf show
+  268  tf init
+  269  tf plan
+  270  tf output
+  271  tf apply
+  272  tf plan
+  273  tf apply
+  274  aws s3 ls
+  275  tf destory
+  276  tf destroy
+  277  tf plan
+  278  tf apply
+  279  aws s3 list
+  280  aws s3 ls
+  281  tf plan
+  282  tf pply
+  283  tf apply
+  284  tf apply -output
+  285  tf apply -output output.tf
+  286  tf destroy
+  287  tf apply
+  288  tf plan
+  289  tf apply
+  290  tf plan
+  291  tf apply
+  292  tf state list
+  293  tf plan
+  294  terraform init
+  295  tf init
+  296  tf state list
+  297  tf init
+  298  tf plan
+  299  tf init
+  300  tf plan
+  301  tf apply
+  302  tf destroy
+  303  tf format
+  304  tf fmt
+  305  terraform fmt
+  306  cd ..
+  307  cd ./Day04/
+  308  tf fmt
+  309  terraform show
+  310  tf init
+  311  tf plan
+  312  tf init
+  313  tf plan
+  314  tf init
+  315  tf plan
+  316  tf apply
+  317  tf state show s3
+  318  terraform state list
+  319  tf show
+  320  tf apply
+  321  tf plan
+  322  tf apply
+  323  tf plan
+  324  tf apply -auto-approve
+  325  history
+  326  history > Day4Commands.txt
+  327  tf destroy -help
+  328  tf plan -help
+  329  terraform state pull
+  330  terraform state mv test/terraform.tfstate prod/terraform.tfstate
+  331  terraform state rm s3
+  332  terraform state rm -help
+  333  terraform state rm -dry-run
+  334  tf destroy
+  335  ls -ltr
+  336  cd ../Day05/
+  337  ls -ltr
+  338  clear
+  339  tf init
+  340  tf plan
+  341  tf output
+  342  tf plan
+  343  tf plan -var=environment=preprod
+  344  export TF_VAR_environment=prod
+  345  tf plan
+  346  tf apply
+  347  tf apply 
+  348  tf plan
+  349  tf destroy -auto-approe
+  350  tf destroy -auto-apprve
+  351  tf destroy -auto-approve
+  352  tf plan
+  353  tf apply
+  354  tf destroy
+  355  tf output show
+  356  tf outuput
+  357  tf output
+  358  tf plan
+  359  history
+  360  history > Day05comamnds.txt
+  361  cp ./preprod.tfvars prod.tfvars
+  362  tf plan -var-file="prod.tfvars"
+  363  history > Day05comamnds.txt
+  364  terraform plan | grep Environment
+  365  history > Day05comamnds.txt
+  366  tf show
+  367  tf destroy
+  368  clear
+  369  tf -version
+  370  terraform -version
+  371  alias tf=terraform
+  372  ls -ltr
+  373  clear
+  374  cp -rf ./Day06/ ./Day07
+  375  cd ./Day07/
+  376  ls -ltr
+  377  clear
+  378  tf plan
+  379  alias tf=terraform
+  380  tf plan
+  381  tf init
+  382  tf plan
+  383  tf plan 
+  384  tf plan
+  385  history
+  386  history > Day07commands.txt
+  387  cd ..
+  388  cd ./Day08\ -\ Meta\ Arguments/
+  389  cd ..
+  390  cd ./Day08\ -\ Meta\ Arguments/
+  391  clear
+  392  tf init
+  393  tf plan
+  394  tf plan | grep "will be created"
+  395  tf plan
+  396  tf init
+  397  terraform providers
+  398  cd ./Day09\ -\ LifeCycle\ Rules/
+  399  clear
+  400  alias tf=terraform
+  401  tf -version
+  402  tf init
+  403  tf plan
+  404  tf apply
+  405  tf apply 
+  406  tf destroy
+  407  tf apply
+  408  tf destroy
+  409  tf apply
+  410  tf destroy
+  411  tf show
+  412  tf apply
+  413  tf plan
+  414  tf destroy
+  415  tf plan
+  416  tf apply
+  417  tf plan
+  418  tf apply
+  419  tf plan
+  420  tf apply
+  421  tf plan
+  422  tf apply
+  423  tf destroy
+  424  cd ..
+  425  cd ./Day10\ -\ Expressions/
+  426  clear
+  427  tf init
+  428  tf plan
+  429  tf plan aws_instance.splat_example
+  430  aws_instance.splat_example[*].id
+  431  terraform console
+  432  tf plan
+  433  tf plan | grep created
+  434  history > Day10Commands.txt
+  435  cd ..
+  436  git checkout 
+  437  git commit 
+  438  git add .
+  439  git add
+  440  git add .
+  441  git commit 
+  442  git push .
+  443  git merge
+  444  git config morusu.vinod@gmail.com 'Vinod'
+  445  git push .
+  446  git commit .
+  447  git push origin/main 
+  448  git push Terraform_AWS
+  449  history > ./Day10\ -\ Expressions/Day10Commands.txt 
+  450  git show
+  451  git commit 
+  452  git add .
+  453  git commit 
+  454  git push
+  455  history > ./Day10\ -\ Expressions/Day10Commands.txt 
+  456  git show
+  457  git add .
+  458  git commit .
+  459  git push origin main
+  460  git -rm cached
+  461  git rm --cached Day02/.terraform/providers/registry.terraform.io/hashicorp/aws/6.27.0/linux_amd64/terraform-provider-aws_v6.27.0_x5
+  462  git rm --cached linux_amd64/terraform-provider-aws_v6.27.0_x5
+  463  git filter-repo --path Day02/.terraform --invert-paths
+  464  pip install git-filter-repo
+  465  yum install git-filter-repo
+  466  yum4 install git-filter-repo
+  467  sudo apt install git-filter-repo
+  468  git filter-repo --path Day02/.terraform --invert-paths
+  469  git filter-repo --path Day02/.terraform --invert-paths --firce
+  470  git filter-repo --path Day02/.terraform --invert-paths --force
+  471  git push origin main --force
+  472  git push --force
+  473  git push origin/main --force
+  474  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  475  git add .
+  476  git commit 
+  477  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  478  history > ./Day10\ -\ Expressions/Day10Commands.txt 
+  479  git add .
+  480  git commit 
+  481  git push https://github.com/VinodM5619/Terraform_AWS.git
+  482  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  483  clear
+  484  cd ./Day10\ -\ Expressions/
+  485  tf show
+  486  tf destroy
+  487  clear
+  488  terraform console 
+  489  cd ../Day11\ -\ Functions/
+  490  clear
+  491  tf init
+  492  clear
+  493  alias tf=terraform
+  494  tf plan
+  495  tf plan | grep +
+  496  tf console
+  497  tf plan | grep +
+  498  tf plan
+  499  alias tf=terraform
+  500  tf plan
+  501  cd ./Day11\ -\ Functions/
+  502  tf plan
+  503  tf init
+  504  tf plan
+  505  tf plan | grep +
+  506  tf plan
+  507  tf plan | grep +
+  508  cd ..
+  509  cd ./Day11-12\ -\ Functions/
+  510  tf plan
+  511  cd ./Day11-12\ -\ Functions/
+  512  tf plan
+  513  alias tf=terraform
+  514  clear
+  515  tf plan
+  516  tf output unique_locations
+  517  tf plan | grep -A5 unique_locations
+  518  tf plan | grep positive_costs
+  519  tf plan | grep -A5 positive_costs
+  520  tf plan | grep +
+  521  tf plan 
+  522  tf plan
+  523  tf plan | grep +
+  524  tf plan | grep total_cost
+  525  tf plan | grep average_cost
+  526  tf plan | grep current_time
+  527  tf plan | grep timestamps
+  528  tf apply
+  529  tf apply -auto-approve
+  530  tf plan | grep config_*
+  531  tf plan | grep config
+  532  tf plan | grep -A10 config
+  533  tf plan | grep config_data
+  534  tf plan | grep config_file_exists
+  535  tf plan
+  536  tf destroy
+  537  cd ..
+  538  git add .
+  539  git commit 
+  540  git push origin main 
+  541  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  542  history > ./Day11-12\ -\ Functions/Day11_12Commands.txt
+  543  git ad..
+  544  git add.
+  545  git add .
+  546  git commit 
+  547  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  548  cd ./Day13\ -\ DataSources/
+  549  clear
+  550  tf init
+  551  tf plan
+  552  tf apply -auto-approve
+  553  tf destroy
+  554  cd ..
+  555  git add .
+  556  git commit 
+  557  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  558  clear
+  559  cd ./Day14\ -\ Mini\ Pjct-1/
+  560  clear
+  561  tf init
+  562  tf plan
+  563  tf refresh
+  564  tf plan
+  565  tf apply -auto-approve
+  566  tf destroy
+  567  cd ..
+  568  git add .
+  569  git commit 
+  570  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  571  cd ./Day15\ -\ Mini\ Pjct-2/
+  572  clear
+  573  aws ec2 create-key-pair --key-name vpc-peering-demo --region us-east-1 --query 'KeyMaterial' --output text > vpc-peering-demo.pem
+  574  aws ec2 create-key-pair --key-name vpc-peering-demo --region us-west-2 --query 'KeyMaterial' --output text > vpc-peering-demo-west.pem
+  575  chmod 400 vpc-peering-demo.pem
+  576  chmod 400 ./vpc-peering-demo-west.pem
+  577  clear
+  578  alias tf=terraform
+  579  tf init
+  580  tf plan
+  581  tf apply -auto-approve
+  582  tf destroy
+  583  history > Day15Commands.txt
+  584  cd ..
+  585  git add .
+  586  git commit 
+  587  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  588  clear
+  589  git add .
+  590  git commit 
+  591  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  592  git add .
+  593  git commit 
+  594  cp -rf ./Day15\ -\ Mini\ Pjct-2/ Day16
+  595  cd ./Day16\ -\ Mini\ Pjct-3/
+  596  tf init
+  597  tf plan
+  598  tf refresh
+  599  tf init
+  600  tf plan
+  601  tf init
+  602  tf plan
+  603  clear
+  604  tf plan
+  605  tf validate
+  606  tf refresh
+  607  tf plan
+  608  tf plan | grep -i "will be created"
+  609  tf apply -auto-approve
+  610  tf plan
+  611  tf apply -auto-approve
+  612  tf plan
+  613  tf apply -auto-approve
+  614  tf destroy
+  615  cd ..
+  616  history > ./Day16\ -\ Mini\ Pjct-3/Day16commands.txt
