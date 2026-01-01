@@ -65,13 +65,39 @@ resource "aws_iam_policy" "ec2_describe_policy" {
   })
 }
 
-resource "aws_iam_group_policy_attachment" "education_policy_attach" {
-  group      = aws_iam_group.education.name
-  policy_arn = aws_iam_policy.ec2_describe_policy.arn
-
+# Require MFA for all actions except MFA setup and basic identity checks
+resource "aws_iam_policy" "require_mfa" {
+  name        = "require-mfa"
+  description = "Require MFA for IAM users"
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Sid       = "DenyIfNotMFA",
+        Effect    = "Deny",
+        NotAction = [
+          "iam:CreateVirtualMFADevice",
+          "iam:EnableMFADevice",
+          "iam:ListMFADevices",
+          "iam:ResyncMFADevice",
+          "iam:GetUser",
+          "sts:GetSessionToken"
+        ],
+        Resource  = "*",
+        Condition = {
+          Bool = { "aws:MultiFactorAuthPresent" = "false" }
+        }
+      }
+    ]
+  })
 }
 
 
+
+resource "aws_iam_group_policy_attachment" "education_policy_attach" {
+  group      = aws_iam_group.education.name
+  policy_arn = aws_iam_policy.ec2_describe_policy.arn
+}
 resource "aws_iam_group_policy_attachment" "managers_policy_attach" {
   group      = aws_iam_group.managers.name
   policy_arn = aws_iam_policy.ec2_describe_policy.arn
@@ -79,4 +105,17 @@ resource "aws_iam_group_policy_attachment" "managers_policy_attach" {
 resource "aws_iam_group_policy_attachment" "engineers_policy_attach" {
   group      = aws_iam_group.engineers.name
   policy_arn = aws_iam_policy.ec2_describe_policy.arn
+}
+
+resource "aws_iam_group_policy_attachment" "education_mfa_attach" {
+  group      = aws_iam_group.education.name
+  policy_arn = aws_iam_policy.require_mfa.arn
+}
+resource "aws_iam_group_policy_attachment" "managers_mfa_attach" {
+  group      = aws_iam_group.managers.name
+  policy_arn = aws_iam_policy.require_mfa.arn
+}
+resource "aws_iam_group_policy_attachment" "engineers_mfa_attach" {
+  group      = aws_iam_group.engineers.name
+  policy_arn = aws_iam_policy.require_mfa.arn
 }
