@@ -112,7 +112,7 @@ resource "aws_instance" "demo" {
   provisioner "remote-exec" {
     inline = [
       "sudo chmod +x /tmp/welcome.sh",
-      "sudo /tmp/welcome.sh"
+      "s0udo /tmp/welcome.sh"
     ]
   }
   
