@@ -921,7 +921,66 @@
   921  cd ..
   922  git add .
   923  git commit 
-  924  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  924* git push ./https://github.com/ --force
   925  cd ./Day25\ -\ tf\ import/
   926  history
-  927  
+  927  history > commands.txt
+  928  cd ..
+  929  git add .
+  930  git commit 
+  931* 
+  932  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  933  git status
+  934  cd ./Day03\ -\ Resource\ S3\ creation/
+  935  clear
+  936  ls -ltr
+  937  tf init
+  938  terraform init -migrate-state
+  939  tf plan
+  940  tf init -reconfigure
+  941  tf plan
+  942  tf init -reconfigure
+  943  tf plan
+  944  tf init
+  945  tf init -reconfigure
+  946  tf refresh
+  947  tf show
+  948  tf apply 
+  949  tf init -migrate-state
+  950  tf plan
+  951  tf init
+  952  tf init refresh
+  953  tf init -reconfigure
+  954  tf plan
+  955  tf apply
+  956  tf plan
+  957  tf apply
+  958  tf destroy
+  959  cd ..
+  960  git add .
+  961  git commit 
+  962  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  963  git add .
+  964  git commit 
+  965  git push https://github.com/VinodM5619/Terraform_AWS.git --./Day11-12\ -\ Functions/
+  966  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  967  cd ./Day03\ -\ Resource\ S3\ creation/
+  968  terraform login
+  969  tf init
+  970  tf plan
+  971  tf apply
+  972  tf destroy
+  973  cd .. 
+  974  git add .
+  975  git status
+  976  git commit 
+  977  git push https://github.com/VinodM5619/Terraform_AWS.git --force
+  978  clear
+  979  git checkout -b feat/import-demo
+  980  git add Day25 - tf import/commands.txt
+  981  git add "Day25 - tf import"/commands.txt
+  982  git commit -m "feat/import-demo"
+  983  git push origin "feat/import-demo"
+  984  git push https://github.com/VinodM5619/Terraform_AWS.git "feat/import-demo"
+  985  history
+  986  history > ./Day25\ -\ tf\ import/commands.txt 
