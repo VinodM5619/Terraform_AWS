@@ -1,13 +1,16 @@
-terraform {
-  backend "s3" {
-    bucket       = "mytfbucketdevdbavin"
-    key          = "dev/terraform.tfstate"
-    region       = "ap-south-1"
-    use_lockfile = true
-    encrypt      = true
-  }
-}
 
+
+
+terraform { 
+  cloud { 
+    
+    organization = "tf-test-demo-ws" 
+
+    workspaces { 
+      name = "tf-cli" 
+    } 
+  } 
+}
 
 terraform {
   required_providers {
