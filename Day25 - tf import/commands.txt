@@ -924,4 +924,4 @@
   924  git push https://github.com/VinodM5619/Terraform_AWS.git --force
   925  cd ./Day25\ -\ tf\ import/
   926  history
-  927  history > commands.txt
+  927  
