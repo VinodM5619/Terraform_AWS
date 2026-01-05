@@ -15,5 +15,6 @@ resource "aws_s3_bucket" "demobucket11" {
     Name        = "MyBucket"
     Environment = "Prod"
     ManagedBy   = "Terraform"
+    Project     = "Terraform Demo for HCP"
   }
 }
